@@ -1,9 +1,14 @@
-
+import java.util.ArrayList;
+import java.util.List;
 public class App {
     public static void main(String[] args) {
-        Customer c1 = new Customer(0, "小明", "15263715273", 1);
-        Customer c2 = new Customer(1, "djsa", "123829382", 2);
-        System.out.println(c1.toString());
-        System.out.println(c2.toString());
+        List<Customer> customers = new ArrayList<>();
+        customers.add(new Customer(0, "小明", "23134123", 0));
+        customers.add(new Customer(1, "dasdsad", "213213", 1));
+        customers.add(new Customer(2, "dsadw", "321321321", 2));
+
+        for(Customer c : customers){
+            System.out.println(c);
+        }
     }
 }
