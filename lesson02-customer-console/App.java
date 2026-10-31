@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+
 public class App {
     public static void main(String[] args) {
         List<Customer> customers = new ArrayList<>();
@@ -10,5 +11,20 @@ public class App {
         for(Customer c : customers){
             System.out.println(c);
         }
+        Customer found = findByID(customers, 999);
+        if (found == null) {
+            System.out.println("没有 id=999 的客户");
+        } else {
+            System.out.println(found.name);
+        }
+    }
+
+    static Customer findByID(List<Customer> customers, int id) {
+        for (Customer c : customers){
+            if(c.id == id){
+                return c;
+            }
+        }
+        return null;
     }
 }
