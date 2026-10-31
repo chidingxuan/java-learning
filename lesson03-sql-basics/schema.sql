@@ -1,0 +1,12 @@
+CREATE TABLE customer(
+id INTEGER PRIMARY KEY,
+name TEXT NOT NULL,
+phone TEXT,
+level INTEGER DEFAULT 0
+);
+CREATE TABLE orders(
+id INTEGER PRIMARY KEY,
+customer_id INTEGER NOT NULL,
+amount REAL NOT NULL,
+created_at TEXT NOT NULL
+);
