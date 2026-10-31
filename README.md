@@ -28,9 +28,10 @@
 ## 进度
 
 - [x] lesson01-java-basics：`Main.java` 编译运行通过，输出「小明学习Java第1天」
-- [ ] 装 `redhat.java`，恢复补全
-- [ ] lesson02-customer-console：D1 实战
-- [ ] D2 SQL/JDBC
+- [x] 装 `redhat.java`（1.58.0，自带 JRE）
+- [x] lesson02-customer-console：`Customer` 类（字段/构造/toString）+ `List<Customer>` + 四个方法（内联 add、`findByID`、`updatePhone`、`remove`）+ 空指针判空
+- [ ] D1 补：VS Code 断点调试实操、字段改 `private` + getter
+- [ ] D2 SQL/JDBC（用系统自带 sqlite3 练，公司实际是 MySQL/Oracle）
 
 ## 目录约定
 

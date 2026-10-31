@@ -17,6 +17,14 @@ public class App {
         } else {
             System.out.println(found.name);
         }
+        System.out.println("修改 id=1 的电话 -> " + updatePhone(customers, 1, "13800001111"));
+        System.out.println("改完: " + findByID(customers, 1));
+
+        System.out.println("删除 id=1 -> " + remove(customers, 1));
+        for (Customer c : customers) {
+            System.out.println(c);
+        }
+        System.out.println("再查 id=1 -> " + findByID(customers, 1));
     }
 
     static Customer findByID(List<Customer> customers, int id) {
@@ -26,5 +34,29 @@ public class App {
             }
         }
         return null;
+    }
+
+    static boolean remove(List<Customer> customers, int id){
+
+        for (Customer c : customers){
+            if(id == c.id){
+                customers.remove(c);
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    static boolean updatePhone(List<Customer> customers, int id, String phone){
+
+        for (Customer c: customers){
+            if(id == c.id){
+                c.phone = phone;
+                return true;
+            }
+        }
+
+        return false;
     }
 }
