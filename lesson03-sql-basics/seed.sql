@@ -5,5 +5,5 @@ INSERT INTO customer (id, name) VALUES (3, '阿强');
 INSERT INTO orders (customer_id, amount, created_at) VALUES (1,128.50,'2026-10-01');
 INSERT INTO orders (customer_id, amount, created_at) VALUES (1, 66.00,  '2026-10-03');
 INSERT INTO orders (customer_id, amount, created_at) VALUES (2, 999.90, '2026-10-05');
-INSERT INTO orders(customer_id, amount, created_at) VALUES (1, 0.83, '2026-10-6');
-INSERT INTO orders(customer_id, amount, created_at) VALUES (2, 19.89, '2026-10-7');
+INSERT INTO orders(customer_id, amount, created_at) VALUES (1, 0.83, '2026-10-06');
+INSERT INTO orders(customer_id, amount, created_at) VALUES (2, 19.89, '2026-10-07');
